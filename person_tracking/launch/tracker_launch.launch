@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+
+    <node pkg="pubimage" type="pubimage.py" name="webcam" />
+
+    <node pkg="person_tracking" type="tracking.py" name="tracker" output='screen'>
+        <param name="path_to_ckpt" value="/path/to/tensorflow/model/frozen_inference_graph.pb" type = "str"/>
+        <param name="path_to_deepsort" value="/path/to/detectio/model/deepsort/mars-small128.pb" type = "str" />
+	</node>
+
+</launch>
