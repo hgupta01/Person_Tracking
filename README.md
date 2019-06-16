@@ -13,7 +13,7 @@ Package to publish unaltered frames from webcam to rostopic **camImage**.
 
 ## Using in Project
 For using these packages, just copy then into src folder of ROS project, build the project using *catkin_make* and run the launch file. Two changes have to be made before using the packages.
-1. Changing the python environment in following nodes (replace *#!/home/*)
+1. Changing the python environment in following nodes (replace *#!/home/ros-indigo/rospythonenv/bin/python* with your python virtualenv)
     * *person_tracking/src/person_tracking.py*
     * *person_tracking/src/tracking.py*
     * *pubimage/src/pubimage.py*
